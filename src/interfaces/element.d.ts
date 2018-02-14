@@ -1,6 +1,6 @@
 export interface Element {
     mount(el: HTMLElement | string): void;
-    on(ev: ElementEventType, handler: () => void): void;
+    on(ev: ElementEventType, handler: (ev?:any) => void): void;
     blur(): void;
     clear(): void;
     focus(): void;
